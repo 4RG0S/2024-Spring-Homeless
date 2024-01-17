@@ -472,7 +472,7 @@ a:focus {
   padding: 10px 45px;
   background-color: #00bbf0;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 100px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
@@ -481,6 +481,101 @@ a:focus {
 .community_section .btn-box a:hover {
   background-color: #007fa4;
 }
+
+/* 게시판 CSS */
+
+#community_board_wrap {
+  width: 100%;
+  padding: 50px 0px;
+  border-radius: 30px;
+  background: #f5f6f7;
+  margin-top: 50px;
+}
+
+#community_board_wrap > div {
+  display: inline;
+  width: 90%;
+  min-width: 1000px;
+  max-width: 1200px;
+  padding-left: 15px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.community_board {
+  display: inline-block;
+  width: 48%;
+  border-radius: 30px;
+  background: #ffffff;
+}
+
+#community_board_wrap > div > div:nth-child(even) {
+  margin-left: 4%;
+}
+
+.community_board .title {
+  position: relative;
+  padding: 20px;
+  border-bottom: 2px solid #6799FF;
+}
+
+.community_board .title a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #444;
+  font-weight: 1000;
+}
+
+.community_board .title .name {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+
+.community_board .title .more {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+}
+
+.community_board .title .more img {
+  width: 30px;
+}
+
+.community_board .list {
+  padding: 20px;
+}
+
+.community_board .list ul li {
+  margin-top: 10px;
+  font-size: 0;
+  margin-left: -35px;
+}
+
+.community_board .list a,
+.community_board .list span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.community_board .list a {
+  width: 80%;
+  text-align: left;
+  font-size: 14px;
+}
+
+.community_board .list span {
+  width: 20%;
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+}
+
+.community_board .list a:hover {
+  font-weight: 1000;
+}
+
 
 /* TODO : 여기서부터 start */
 
@@ -528,6 +623,7 @@ caption {
 
 .board_list .title:hover {
   text-decoration: underline;
+  font-weight: 600;
 }
 
 /* paging */
@@ -579,17 +675,43 @@ caption {
 
 .paging a.num {
   margin: 0 5px;
+  font-weight: 600;
 }
 
 .paging a.num.on {
   color: #1F51B7;
-  text-decoration: 2px solid;
+  font-weight: 1000;
 }
 
 .paging a.num:hover {
   text-decoration: underline;
+  font-weight: 1000;
 }
 
+.board_list_wrap .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.board_list_wrap .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.board_list_wrap .btn-box a:hover {
+  background-color: #007fa4;
+}
 
 
 
