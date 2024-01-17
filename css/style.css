@@ -484,6 +484,8 @@ a:focus {
 
 /* TODO : 여기서부터 start */
 
+/* board_list 게시판 */
+
 table {
   border-collapse: collapse;
 }
@@ -516,7 +518,8 @@ caption {
 }
 
 .board_list thead tr th {
-  border-top: 2px solid navy;
+  border-top: 2px solid #6799FF;
+  border-bottom: 2px solid #6799FF;
 }
 
 .board_list .title {
@@ -527,38 +530,66 @@ caption {
   text-decoration: underline;
 }
 
-.board_list_wrap .paging {
-  margin-top: 20px;
+/* paging */
+.paging {
+  margin-top: 30px;
   text-align: center;
-  font-size: 0;
 }
-.board_list_wrap .paging a {
+
+.paging a {
   display: inline-block;
-  margin-left: 10px;
-  padding: 5px 10px;
-  border: 1px solid #000;
+  vertical-align: middle;
+}
+
+.paging a.first,
+.paging a.prev,
+.paging a.next,
+.paging a.last {
+  width: 32px;
+  height: 32px;
+  background-color: #B2CCFF;
+  background-image: url(../images/page_bt.png);
+  background-repeat: no-repeat;
   border-radius: 100px;
-  font-size: 12px;
-}
-.board_list_wrap .paging a:first-child {
-  margin-left: 0;
+  text-indent: -1000px;
+  overflow: hidden;
 }
 
-.board_list_wrap .paging a.btn {
-  border: 2px solid #eee;
-  background: #eee;
+.paging a.bt:hover {
+  background-color: #6799FF;
 }
 
-.board_list_wrap .paging a.num {
-  border: 1px solid navy;
-  font-weight: 800;
-  color: navy;
+.paging a.first {
+  background-position: 10px -40px;
 }
 
-.board_list_wrap .paging a.num.on {
-  background: navy;
-  color: #fff;
+.paging a.prev {
+  margin-right: 5px;
+  background-position: 10px 10px;
 }
+
+.paging a.next {
+  margin-left: 5px;
+  background-position: -40px 10px;
+}
+
+.paging a.last {
+  background-position: -38px -40px;
+}
+
+.paging a.num {
+  margin: 0 5px;
+}
+
+.paging a.num.on {
+  color: #1F51B7;
+  text-decoration: 2px solid;
+}
+
+.paging a.num:hover {
+  text-decoration: underline;
+}
+
 
 
 
