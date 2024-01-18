@@ -758,3 +758,186 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.education_section {
+  position: relative;
+  background-color: #ffffff;
+  color: #00204a;
+}
+
+.education_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 45px;
+  background-color: #f8f8f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.education_section .box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 300px;
+  min-width: 75px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.education_section .box .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.education_section .box .detail-box h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.education_section .box .detail-box a {
+  color: #00204a;
+  font-weight: 600;
+}
+
+.education_section .box .detail-box a:hover {
+  color: #00bbf0;
+}
+
+.education_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.education_section .btn-box a {
+  display: inline-block;
+  padding: 10px 45px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+}
+
+.education_section .btn-box a:hover {
+  background-color: #007fa4;
+}
+
+.education_section * {
+  box-sizing: border-box;
+}
+.education_section .body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.education_section .container {
+  display: flex;
+  align-items: center;
+  justify-content: last baseline;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.education_section .slideshow-container {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.education_section .mySlides-education,
+.education_section .mySlides-study,
+.education_section .mySlides-seminar,
+.education_section .mySlides-hacking,
+.education_section .mySlides-hackathon,
+.education_section .mySlides-aff,
+.education_section .mySlides-jfs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+.eucation_section .text-container {
+  width: 50%;
+  padding: 20px;
+}
+.education_section .text-container h3 {
+  font-size: 15px; 
+  color: #888; 
+}
+.education_section .button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #00bbf0;
+  color: white;
+  border: none;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.education_section .thumbnail-education, 
+.education_section .thumbnail-study, 
+.education_section .thumbnail-seminar, 
+.education_section .thumbnail-hacking, 
+.education_section .thumbnail-hackathon, 
+.education_section .thumbnail-aff, 
+.education_section .thumbnail-jfs {
+  width: 40px;
+  height: 40px;
+}
+.education_section .thumbnails-education, 
+.education_section .thumbnails-study, 
+.education_section .thumbnails-seminar, 
+.education_section .thumbnails-hacking, 
+.education_section .thumbnails-hackathon, 
+.education_section .thumbnails-aff, 
+.education_section .thumbnails-jfs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  margin-top: 20px;;                
+}
+.education_section .prev,
+.education_section .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+.education_section .prev {
+    left: 10px;
+}
+.education_section .next {
+    right: 10px;
+}
+.education_section img {
+  max-width: 100%;
+  height: auto;
+}
