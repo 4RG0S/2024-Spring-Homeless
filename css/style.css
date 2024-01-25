@@ -746,6 +746,7 @@ a:focus {
   position: relative;
   background-color: #ffffff;
   text-align: center;
+  display: none;
 }
 
 .footer_section p {
