@@ -126,14 +126,12 @@
                         <textarea placeholder="내용 입력"></textarea>
                     </div>
                     <div class="bt_wrap">
-                        <a href="notice_view.html" class="on">등록</a>
-                        <a href="notice_list.html">취소</a>
+                        <a href="#" onclick="submitPost()" class="on">등록</a>
+                        <a href="#" onclick="confirmCancel()">취소</a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- info section -->
 
     <!-- info section -->
 
@@ -213,6 +211,33 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
+    <!-- 확인 메시지 표시 기능 -->
+    <script>
+        function confirmCancel() {
+            var result = confirm("작성을 정말로 취소하시겠습니까?");
+            if (result) {
+                // 사용자가 확인을 눌렀을 때 수행할 작업
+                window.location.href = "notice_list.html";
+            }
+        }
+    </script>
+    <!-- End 확인 메시지 표시 기능-->
+    <!-- 제목과 내용 입력 검증 기능-->
+    <script>
+    function submitPost() {
+        var title = document.getElementById('title').value;
+        var content = document.getElementById('content').value;
+        
+        if (!title || !content) {
+            alert('제목과 내용을 모두 입력해주세요.');
+            } else {
+            // TODO: 제목과 내용이 모두 입력된 경우, 폼 제출 로직 작성 (서버와의 통신 로직 작성)
+            window.location.href = "notice_view.html";
+        }
+    }
+    </script>
+    <!-- End 제목과 내용 입력 검증 기능 -->
+
 
 </body>
 </html>
