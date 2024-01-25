@@ -856,8 +856,8 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: last baseline;
-  flex-wrap: wrap;
-  gap: 100px;
+  flex-wrap: nowrap;
+  gap: 50px;
 }
 .education_section .slideshow-container {
   width: 50%;
@@ -878,7 +878,7 @@ a:focus {
   text-align: center;
   overflow: hidden;
 }
-.eucation_section .text-container {
+.education_section .text-container {
   width: 50%;
   padding: 20px;
 }
@@ -888,14 +888,16 @@ a:focus {
 }
 .education_section .button {
   display: block;
-  width: 100%;
+  width: 30%;
   padding: 10px;
   text-align: center;
   background-color: #00bbf0;
   color: white;
   border: none;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-left: auto; 
+  margin-right: auto;
 }
 .education_section .thumbnail-education, 
 .education_section .thumbnail-study, 
