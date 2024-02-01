@@ -142,7 +142,20 @@
                 <div class="bt_wrap">
                     <a href="welcome_list.html" class="on">목록</a>
                     <a href="welcome_edit.html">수정</a>
+                    <a href="#">삭제</a>
                 </div>
+                
+                <!-- 댓글 작성 부분 -->
+                <div class="comment_wrap">
+                    <h3>댓글</h3>
+                    <textarea id="commentContent" placeholder="댓글을 입력해주세요."></textarea>
+                    <button onclick="addComment()">댓글 등록</button>
+                </div>
+
+                <!-- 댓글 리스트 부분 -->
+                <ul id="commentList">
+                </ul>
+
             </div>
         </div>
 
@@ -224,6 +237,35 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
+
+    <script>
+        // 댓글을 추가하는 함수
+        function addComment() {
+            var commentContent = document.getElementById('commentContent').value;
+    
+            if (!commentContent) {
+                alert('댓글 내용을 입력해주세요.');
+                return;
+            }
+    
+            var commentList = document.getElementById('commentList');
+            var newComment = document.createElement('li');
+            
+            // 날짜와 시간을 추가
+            var now = new Date();
+            var dateTime = now.getFullYear() + '/' + (now.getMonth()+1) + '/' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes();
+    
+            // 댓글 작성자 이름을 표시할 공간을 추가
+            newComment.innerHTML = '<span class="commentAuthor">ARGOS </span>' +
+                                commentContent + 
+                                '<span>' + dateTime + '</span>' +
+                                '<button onclick="alert(\'수정 기능이 호출되었습니다.\')">수정</button>' +
+                                '<button onclick="alert(\'삭제 기능이 호출되었습니다.\')">삭제</button>';
+            commentList.appendChild(newComment);
+    
+            document.getElementById('commentContent').value = '';
+        }
+        </script>
 
 </body>
 </html>
