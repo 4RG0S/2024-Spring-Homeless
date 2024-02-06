@@ -101,41 +101,45 @@
 
         <div class="board_wrap">
             <div class="board_title">
-                <strong>가입인사</strong>
+                <strong>ARGOS COMMUNITY</strong>
+                <p>Hack the world for everyone</p>
             </div>
             <div class="board_write_wrap">
                 <div class="board_write">
-                    <div class="title">
-                        <dl>
-                            <dt>제목</dt>
-                            <dd><input type="text" id="title" placeholder="제목 입력" value="글 제목이 들어갑니다."></dd>
-                        </dl>
-                    </div>
-                    <div class="info">
-                        <dl>
-                            <dt>글쓴이</dt>
-                            <dd>ARGOS</dd>
-                        </dl>
-                        <dl>
-                            <dt>비밀번호</dt>
-                            <dd><input type="password" placeholder="비밀번호 입력" value="123456"></dd>
-                        </dl>
-                    </div>
-                    <div class="cont">
-                        <textarea id="content" placeholder="내용 입력">
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.
-글 내용이 들어갑니다.</textarea>
-                    </div>
-                    <div class="bt_wrap">
-                        <a href="#" onclick="submitPost()" class="on">등록</a>
-                        <a href="#" onclick="confirmCancel()">취소</a>
-                    </div>
+                    <form id="postForm">
+                        <div class="title">
+                            <dl>
+                                <dt>제목</dt>
+                                <dd><input id="title" type="text" placeholder="제목 입력"></dd>
+                            </dl>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>게시판 구분</dt>
+                                <dd>
+                                    <select id="postType">
+                                        <option value="notice">공지사항</option>
+                                        <option value="greeting">가입인사</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대표글</dt>
+                                <dd><input type="checkbox" id="isNotice"></dd>
+                            </dl>
+                            <dl>
+                                <dt>글쓴이</dt>
+                                <dd>ARGOS</dd>
+                            </dl>
+                        </div>
+                        <div class="cont">
+                            <textarea id="content" placeholder="내용 입력"></textarea>
+                        </div>
+                        <div class="bt_wrap">
+                            <a href="#" onclick="submitPost()" class="on">등록</a>
+                            <a href="#" onclick="confirmCancel()">취소</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -220,23 +224,29 @@
     <!-- End Google Map -->
     <script>
         function confirmCancel() {
-            var result = confirm("수정을 정말로 취소하시겠습니까?");
+            var result = confirm("작성을 정말로 취소하시겠습니까?");
             if (result) {
-                window.location.href = "welcome_view.html";
+                window.location.href = "community_view.html";
             }
         }
     
         function submitPost() {
             var title = document.getElementById('title').value;
             var content = document.getElementById('content').value;
+            var isNotice = document.getElementById('isNotice').checked;
+
+            var type = isNotice ? 'notice' : 'normal';
+
+            // 게시글 데이터를 서버로 전송하는 코드...
             
             if (!title || !content) {
                 alert('제목과 내용을 모두 입력해주세요.');
             } else {
-                window.location.href = "welcome_view.html";
+                window.location.href = "community_view.html";
             }
         }
     </script>
     
+
 </body>
 </html>

@@ -101,71 +101,65 @@
 
         <div class="board_wrap">
             <div class="board_title">
-                <strong>공지사항</strong>
-                <p>ARGOS의 공지사항을 확인하실 수 있습니다.</p>
+                <strong>ARGOS COMMUNITY</strong>
+                <p>Hack the world for everyone</p>
             </div>
-            <div class="board_list_wrap">
-                <div class="board_list">
-                <div class="top">
-                    <div class="num">번호</div>
-                    <div class="title">제목</div>
-                    <div class="writer">글쓴이</div>
-                    <div class="date">작성일</div>
-                    <div class="count">조회</div>
+            <div class="board_view_wrap">
+                <div class="board_view">
+                    <div class="title">
+                        글 제목이 들어갑니다.
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>번호</dt>
+                            <dd>1</dd>
+                        </dl>
+                        <dl>
+                            <dt>글쓴이</dt>
+                            <dd>ARGOS</dd>
+                        </dl>
+                        <dl>
+                            <dt>작성일</dt>
+                            <dd>2003.06.25</dd>
+                        </dl>
+                        <dl>
+                            <dt>조회</dt>
+                            <dd>100</dd>
+                        </dl>
+                    </div>
+                    <div class="cont">
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.<br>
+                        글 내용이 들어갑니다.
+                    </div>
                 </div>
-                <div>
-                    <div class="num">5</div>
-                    <div class="title"><a href="notice_view.html">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">ARGOS</div>
-                    <div class="date">2003.06.25</div>
-                    <div class="count">100</div>
-                </div>
-                <div>
-                    <div class="num">4</div>
-                    <div class="title"><a href="notice_view.html">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">ARGOS</div>
-                    <div class="date">2003.06.25</div>
-                    <div class="count">100</div>
-                </div>
-                <div>
-                    <div class="num">3</div>
-                    <div class="title"><a href="notice_view.html">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">ARGOS</div>
-                    <div class="date">2003.06.25</div>
-                    <div class="count">100</div>
-                </div>
-                <div>
-                    <div class="num">2</div>
-                    <div class="title"><a href="notice_view.html">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">ARGOS</div>
-                    <div class="date">2003.06.25</div>
-                    <div class="count">100</div>
-                </div>
-                <div>
-                    <div class="num">1</div>
-                    <div class="title"><a href="notice_view.html">글 제목이 들어갑니다.</a></div>
-                    <div class="writer">ARGOS</div>
-                    <div class="date">2003.06.25</div>
-                    <div class="count">100</div>
-                </div>
-                </div>
-                <div class="board_page">
-                    <a href="#" class="bt first"><img weight="15px" height="15px" src="images/first_icon.png" alt=""></a>
-                    <a href="#" class="bt prev"><img weight="15px" height="15px" src="images/prev_icon.png" alt=""></a>
-                    <a href="#" class="num on">1</a>
-                    <a href="#" class="num">2</a>
-                    <a href="#" class="num">3</a>
-                    <a href="#" class="num">4</a>
-                    <a href="#" class="num">5</a>
-                    <a href="#" class="bt next"><img weight="15px" height="15px" src="images/next_icon.png" alt=""></a>
-                    <a href="#" class="bt last"><img weight="15px" height="15px" src="images/last_icon.png" alt=""></a>
-                </div>
+
                 <div class="bt_wrap">
-                    <a href="notice_write.html" class="on">등록</a>
-                    <!--<a href="#">수정</a>-->
+                    <a href="community.html" class="on">목록</a>
+                    <a href="community_edit.html">수정</a>
+                    <a href="#">삭제</a>
                 </div>
+
+                <!-- 댓글 작성 부분 -->
+                <div class="comment_wrap">
+                    <h3>댓글</h3>
+                    <textarea id="commentContent" placeholder="댓글을 입력해주세요."></textarea>
+                    <button onclick="addComment()">댓글 등록</button>
+                </div>
+
+                <!-- 댓글 리스트 부분 -->
+                <ul id="commentList">
+                </ul>
+
             </div>
         </div>
+
+    
 
     <!-- info section -->
 
@@ -245,6 +239,48 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
+
+    <script>
+    // 댓글을 추가하는 함수
+    function addComment() {
+        var commentContent = document.getElementById('commentContent').value;
+
+        if (!commentContent) {
+            alert('댓글 내용을 입력해주세요.');
+            return;
+        }
+
+        var commentList = document.getElementById('commentList');
+        var newComment = document.createElement('li');
+        
+        // 날짜와 시간을 추가
+        var now = new Date();
+        var dateTime = now.getFullYear() + '.' + (now.getMonth()+1) + '.' + now.getDate() + ' ' + now.getHours() + ':' + now.getMinutes();
+
+        // 댓글 작성자 이름을 표시할 공간을 추가
+        newComment.innerHTML = '<span class="commentAuthor">ARGOS </span>' +
+                            commentContent + 
+                            '<span>' + dateTime + '</span>' +
+                            '<button onclick="alert(\'수정 기능이 호출되었습니다.\')">수정</button>' +
+                            '<button onclick="alert(\'삭제 기능이 호출되었습니다.\')">삭제</button>';
+        commentList.appendChild(newComment);
+
+        document.getElementById('commentContent').value = '';
+    }
+        // 페이지 로드 시 조회수를 증가시킵니다.
+        window.onload = function() {
+            var postId = getPostIdFromURL(); // URL에서 게시글 ID를 가져오는 함수. 실제 구현 필요.
+            increaseViewCount(postId);
+        };
+
+        function increaseViewCount(id) {
+            // 여기서 실제로는 서버에 조회수 증가를 요청해야 합니다.
+            // 아래는 가상의 코드이며, 실제 구현에는 서버와의 통신이 필요합니다.
+            var post = posts.find(function(post) { return post.id === id; });
+            post.viewCount++;
+            // 서버에 조회수 증가를 요청하는 코드...
+        }
+    </script>
 
 </body>
 </html>

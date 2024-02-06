@@ -1035,8 +1035,12 @@ a:focus {
   width: 10%;
 }
 
+.board_list .type {
+  width: 10%;
+}
+
 .board_list .title {
-  width: 60%;
+  width: 50%;
   text-align: left;
 }
 
@@ -1245,7 +1249,7 @@ a:focus {
 
 .board_write .info dl {
   display: inline-block;
-  width: 50%;
+  width: 33%;
   vertical-align: middle;
 }
 
@@ -1268,8 +1272,7 @@ a:focus {
 }
 
 .board_write .title input[type="text"],
-.board_write .info input[type="text"],
-.board_write .info input[type="password"] {
+.board_write .info input[type="text"] {
   padding: 10px;
   box-sizing: border-box;
 }

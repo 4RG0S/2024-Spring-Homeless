@@ -99,90 +99,206 @@
             <!-- end header section -->
         </div>
 
-    <!-- community section -->
-    
-    <section class="community_section layout_padding">
-        <div class="community_container">
-            <div class="cotainer">
-                <div class="heading_container heading_center">
-                    <h2>
-                        ARGOS <span>COMMUNITY</span>
-                    </h2>
-                    <p>
-                        Hack the world for everyone
-                    </p>
-                </div>
-                
-                <div class="community_board_wrap">
-                    <div>
-                        <div class="community_board">
-                            <div class="title">
-                                <a href="notice_list.html" class="name">공지사항</a>
-                                <a href="notice_list.html" class="more"><img src="images/right_arrow.png" alt="더보기"></a>
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <li>
-                                        <a href="notice_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="notice_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="notice_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="notice_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="notice_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                </ul>
-                            </div>
+        <div class="board_wrap">
+            <div class="board_title">
+                <strong>ARGOS COMMUNITY</strong>
+                <p>Hack the world for everyone</p>
+            </div>            
+            <div class="board_list_wrap" id="postList">
+                <!-- 게시글 목록은 여기에 자동으로 생성됨 -->
+                <div class="board_list">
+                    <div class="top">
+                        <div class="num">번호</div>
+                        <div class="type">
+                            <select id="postFilter" onchange="filterPosts(this.value)">
+                                <option value="all">전체</option>
+                                <option value="notice">공지사항</option>
+                                <option value="greeting">가입인사</option>
+                            </select>
                         </div>
-                        <div class="community_board">
-                            <div class="title">
-                                <a href="welcome_list.html" class="name">가입인사</a>
-                                <a href="welcome_list.html" class="more"><img src="images/right_arrow.png" alt="더보기"></a>
-                            </div>
-                            <div class="list">
-                                <ul>
-                                    <li>
-                                        <a href="welcome_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="welcome_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="welcome_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="welcome_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                    <li>
-                                        <a href="welcome_view.html">글 제목이 들어갑니다.</a>
-                                        <span>2003.06.25</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div class="title">제목</div>
+                        <div class="writer">글쓴이</div>
+                        <div class="date">작성일</div>
+                        <div class="count">조회</div>
                     </div>
+                    <div>
+                        <div class="num">20</div>
+                        <div class="type" id="notice">공지</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">19</div>
+                        <div class="type" id="notice">공지</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">18</div>
+                        <div class="type" id="notice">공지</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">17</div>
+                        <div class="type" id="notice">공지</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">16</div>
+                        <div class="type" id="notice">공지</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">15</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">14</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">13</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">12</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">11</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">10</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">9</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">8</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">7</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">6</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">5</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">4</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">3</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">2</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                    <div>
+                        <div class="num">1</div>
+                        <div class="type" id="greeting">가입</div>
+                        <div class="title"><a href="community_view.html">글 제목이 들어갑니다.</a></div>
+                        <div class="writer">ARGOS</div>
+                        <div class="date">2003.06.25</div>
+                        <div class="count">100</div>
+                    </div>
+                </div>
+                <div class="board_page">
+                    <a href="#" class="bt first"><img weight="15px" height="15px" src="images/first_icon.png" alt=""></a>
+                    <a href="#" class="bt prev"><img weight="15px" height="15px" src="images/prev_icon.png" alt=""></a>
+                    <a href="#" class="num on">1</a>
+                    <a href="#" class="num">2</a>
+                    <a href="#" class="num">3</a>
+                    <a href="#" class="num">4</a>
+                    <a href="#" class="num">5</a>
+                    <a href="#" class="bt next"><img weight="15px" height="15px" src="images/next_icon.png" alt=""></a>
+                    <a href="#" class="bt last"><img weight="15px" height="15px" src="images/last_icon.png" alt=""></a>
+                </div>
+                <div class="bt_wrap">
+                    <a href="community_write.html" class="on">등록</a>
+                    <!--<a href="#">수정</a>-->
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <!-- end community section -->
 
     <!-- info section -->
 
@@ -262,6 +378,52 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
     </script>
     <!-- End Google Map -->
+    <script>
+        // 임시 게시글 데이터 (실제로는 서버로부터 받아와야 합니다.)
+        // var posts = [
+        //     { id: 1, title: '공지사항1', type: 'notice', viewCount: 0 },
+        //     { id: 2, title: '가입인사1', type: 'greeting', viewCount: 0 },
+            // ...
+        // ];
+    
+        // 조회수를 증가시키는 함수입니다.
+        function increaseViewCount(id) {
+            var post = posts.find(function(post) { return post.id === id; });
+            post.viewCount++;
+            document.getElementById('viewCount' + id).innerText = post.viewCount;
+        }
+    
+        // 게시글을 필터링하는 함수입니다.
+        function filterPosts(type) {
+            if (type === 'all') {
+                return;
+            }
+
+            var postList = document.getElementById('postList');
+            postList.innerHTML = '';
+            posts.filter(function(post) { return post.type === type; }).forEach(function(post) {
+                var postItem = document.createElement('div');
+                postItem.innerHTML = `
+                    <div>
+                        <div class="num">${post.id}</div>
+                        <div class="classify" id="${post.type}">${post.type}</div>
+                        <div class="title"><a href="community_view.html">${post.title}</a></div>
+                        <div class="writer">${post.writer}</div>
+                        <div class="date">${post.date}</div>
+                        <div class="count">${post.viewCount}</div>
+                    </div>
+                `;
+                postList.appendChild(postItem);
+            });
+        }
+
+        // 페이지 로드 시 게시글 목록을 생성합니다.
+        window.onload = function() {
+            var type = location.search.split('type=')[1];
+            filterPosts(type || 'all');
+        };
+    </script>
+    
 
 </body>
 </html>
