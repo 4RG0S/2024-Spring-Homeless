@@ -46,8 +46,18 @@
             /* 내부 여백 추가 */
             border-radius: 5px;
             /* 모서리를 둥글게 */
-            margin-bottom: 10px;
-            /* 하단 마진 추가 */
+
+            margin-bottom: 20px; /* 간격을 20px로 수정 */
+        }
+
+        .section_heading {
+            text-align: center;
+        }
+
+        /* 제목과 내용 사이의 간격 늘리기 */
+        .hackathon_info h2 {
+            margin-bottom: 30px; /* 예시로 30px 간격 추가 */
+
         }
     </style>
 
@@ -103,15 +113,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="section_heading">해커톤</h2>
+
+                    <h2 class="section_heading">SOGRA 해커톤</h2>
+                    <div style="padding:15px;"></div>  
                     <p class="hackathon_intro">
-                        <span class="C9DxTc" style="font-family: Lato, Arial; font-weight: 700;">소개</span>
-                        <span class="C9DxTc"> : 목적 없이 과제가 나오는 대로 하던 코딩이 아닌 팀원과 만들고 싶은 것을 하루 동안 만들어 봄으로써 코딩에 대한 새로운 재미를 찾기 위한 해커톤 대회<br>
+                        <span class="C9DxTc" style="font-family: Lato, Arial; font-weight: 700;">소개 :</span>
+                        <span class="C9DxTc"> 목적 없이 과제가 나오는 대로 하던 코딩이 아닌 팀원과 만들고 싶은 것을 하루 동안 만들어 봄으로써 코딩에 대한 새로운 재미를 찾기 위한 해커톤 대회<br>
                             발표 및 영상 제작을 통해 개발 능력 못지않게 중요한 의사소통 능력을 향상 시키고 발표 경험을 쌓을 수 있음<br>
                             타 해커톤과는 다르게 보안의 우수성 혹은 보안의 경각심을 일깨워 주는 우수 작품에 대하여 보안상을 수여하여 보안의 중요성을 강조<br><br>
-                            대상: 컴퓨터공학과 학생 및 사업 참여 학과 학생<br><br>
-                            일정: 매년 5~6월 중 개최 예정
+                        <span class="C9DxTc" style="font-family: Lato, Arial; font-weight: 700;">대상 :</span>
+                        <span class="C9DxTc"> 컴퓨터공학과 학생 및 사업 참여 학과 학생<br><br></span>
+                        <span class="C9DxTc" style="font-family: Lato, Arial; font-weight: 700;">일정 :</span>
+                        <span class="C9DxTc"> 매년 5~6월 중 개최 예정</span>
                     </p>
+                    <div style="padding:20px;">
+                    </div>
+
+
 
                     <label for="year_select">연도 선택:</label>
                     <select id="year_select" onchange="showHackathonInfo()">
@@ -120,7 +138,10 @@
                         <option value="2023">2023년</option>
                     </select>
 
-                    <hr style="border-top: 2px solid black;">
+                    <div style="padding:10px;"></div>
+
+
+
 
                     <div id="hackathon_info" class="jXK9ad-SmKAyb">
                         <!-- Hackathon info will be displayed here based on the selected year -->
@@ -180,7 +201,9 @@
                             </a>
                             <a class="" href="https://open.kakao.com/o/sIllhT5f">
                                 가입 문의
-                            </a>
+
+                            </a>[]
+
                         </div>
                     </div>
                 </div>
@@ -192,76 +215,125 @@
         function showHackathonInfo() {
             var year = document.getElementById("year_select").value;
             var hackathonInfoDiv = document.getElementById("hackathon_info");
-    
+
+
             // Clear previous content
             hackathonInfoDiv.innerHTML = "";
-    
+
             // Add new content based on the selected year
             if (year === "all" || year === "2023") {
-                // Fix the width to accommodate the images
                 hackathonInfoDiv.innerHTML += `
-                <div class="col-md-4 hackathon_item" data-year="2023">
-                    <span class="hackathon_date">2023년 5월</span>
-                    <div class="hackathon_info">
-                        <h3 class="hackathon_name">SOGRA 해커톤 </h3>
-                        <h5 class="hackathon_award">수상 내역</h5>
-                        <div style="width: 500px; margin: 0 auto; margin-bottom: 20px;">
-                            <div style="text-align: center;">
-                                <table border="1" style="width: 100%; display: inline-table;">
-                                    <tr>
-                                        <th>수상</th>
-                                        <th>팀명</th>
-                                    </tr>
-                                    <tr>
-                                        <td>대상</td>
-                                        <td>팀명1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>최우수상</td>
-                                        <td>팀명2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>우수상</td>
-                                        <td>팀명3</td>
-                                    </tr>
-                                </table>
+                <div style="padding:30px;"></div>
+                    <div class="col-md-4 hackathon_item" data-year="2023">
+                        <div class="hackathon_info">
+                            <div style="display: flex; align-items: center;">
+    <div>
+        <h2 style="height: 40px; box-sizing: border-box; border-width: 10px; border-left-style: solid; border-left-color: #231a6f; color: #231a6f; padding: 1px 10px; letter-spacing: 3px; line-height: 0.8; margin: 0;"><span style="font-size: 12pt; font-family: 'Noto Serif KR'; color: #000000;"><br /><br /></span></h2>
+    </div>
+    <div style="margin-left: 10px;">
+        <b style="font-size: 40px; color: #231a6f;">2023년</b>
+    </div>
+</div>
+
+                            <p data-ke-size="size16">&nbsp;</p>
+                            <h5 class="hackathon_award">수상 내역</h5>
+                            <style type="text/css">
+                                .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+                                .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+                                  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+                                    font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg .tg-c0l1{border-color:#c0c0c0;text-align:center;vertical-align:bottom}
+                                .tg .tg-sw0q{border-color:#c0c0c0;font-weight:bold;text-align:center;vertical-align:bottom}
+                            </style>
+<table class="tg" style="undefined;table-layout: fixed; width: 437px">
+<colgroup>
+<col style="width: 104px">
+<col style="width: 174px">
+<col style="width: 159px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-sw0q">수상명</th>
+    <th class="tg-sw0q">팀명</th>
+    <th class="tg-sw0q"><span style="font-weight:bold">시상금 </span>(원)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c0l1">최우수상</td>
+    <td class="tg-c0l1">츠누봇</td>
+    <td class="tg-c0l1">150,000</td>
+  </tr>
+  <tr>
+    <td class="tg-c0l1">우수상</td>
+    <td class="tg-c0l1">진저비어</td>
+    <td class="tg-c0l1">120,000</td>
+  </tr>
+  <tr>
+    <td class="tg-c0l1">보안상</td>
+    <td class="tg-c0l1">쿠로미</td>
+    <td class="tg-c0l1">90,000</td>
+  </tr>
+  <tr>
+    <td class="tg-c0l1">장려상</td>
+    <td class="tg-c0l1">해커톤부수기</td>
+    <td class="tg-c0l1">60,000</td>
+  </tr>
+</tbody>
+</table>
+<div style="padding:30px;"></div>
+                            <!-- Add the activity photo text above the images -->
+                            <div style="display: flex; justify-content: space-between;">
+                                <img src="images/hackathon.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                                <img src="images/hackathon1.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                                <img src="images/hackathon2.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                                <img src="images/hackathon3.png" alt="웹 개발 해커톤 수상작" height="227" style="object-fit: cover;" />
                             </div>
                         </div>
-                        <!-- Add the activity photo text above the images -->
-                        <div style="display: flex; justify-content: space-between;">
-                            <img src="images/hackathon.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
-                            <img src="images/hackathon1.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
-                            <img src="images/hackathon2.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
-                            <img src="images/hackathon3.png" alt="웹 개발 해커톤 수상작" height="227" style="object-fit: cover;" />
-                        </div>
                     </div>
-                </div>
-                <div style="clear: both;"></div>
-                <div style="height: 1px; background-color: black; width: 1000px; margin: 20px auto;"></div>
+                    <div style="clear: both;"></div>
+
                 `;
             }
             if (year === "all" || year === "2024") {
                 hackathonInfoDiv.innerHTML += `
-                    <div class="tyJCtd mGzaTb Depvyb baZpAe">
-                        <span class="hackathon_date">2024년 5월</span>
-                    <div class="hackathon_info">
-                        <h3 class="hackathon_name">SOGRA 해커톤 </h3>
+
+                <div style="padding:30px;"></div>
+                    <div class="col-md-4 hackathon_item" data-year="2023">
+                        <div class="hackathon_info">
+                            <div style="display: flex; align-items: center;">
+    <div>
+        <h2 style="height: 40px; box-sizing: border-box; border-width: 10px; border-left-style: solid; border-left-color: #231a6f; color: #231a6f; padding: 1px 10px; letter-spacing: 3px; line-height: 0.8; margin: 0;"><span style="font-size: 12pt; font-family: 'Noto Serif KR'; color: #000000;"><br /><br /></span></h2>
+    </div>
+    <div style="margin-left: 10px;">
+        <b style="font-size: 40px; color: #231a6f;">2024년</b>
+    </div>
+</div>
+                            <p data-ke-size="size16">&nbsp;</p>
+                            <div style="width: 500px; margin: 0 auto; margin-bottom: 20px;">
+                                <div style="padding:20px;"></div>
+                            </div>
+                            <!-- Add the activity photo text above the images -->
+                        </div>
                     </div>
-                    <div style="height: 1px; background-color: black; width: 1000px; margin: 20px auto;"></div>
+                    <div style="clear: both;"></div>
+
                 `;
             }
             // Add information for other years if needed
         }
-    
+
+
         // Call the function initially to display hackathon info for the default year (2023)
         showHackathonInfo();
     </script>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 
     <!-- jQery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
