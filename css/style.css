@@ -1512,13 +1512,19 @@ a:focus {
 /* ================ hack-section ================ */
 .hack-section body {
   min-height: 100vh;
+  padding-left: 50%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
 }
 
 .hack-section {
   width: 100%;
   height: 100%;
   padding-left: 20px;
-  padding-right: 20px; 
+  padding-right: 20px;
+  padding-left: 50%;
+  background-color: #fff;
 }
 
 
@@ -1529,6 +1535,7 @@ a:focus {
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
+  background-color: #fff;
 }
 
 .hack-section .timeline:before {
