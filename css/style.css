@@ -944,6 +944,7 @@ a:focus {
   height: auto;
 }
 
+<<<<<<< HEAD
 
 /* community_css */
 .board_wrap * {
@@ -1398,6 +1399,47 @@ a:focus {
 }
 
 .community_section .btn-box {
+=======
+.seminar_section {
+  position: relative;
+  background-color: #ffffff;
+  color: #00204a;
+}
+
+.seminar_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 45px;
+  background-color: #f8f8f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.seminar_section .box .detail-box h5 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.seminar_section .box .detail-box a {
+  color: #00204a;
+  font-weight: 600;
+}
+
+.seminar_section .box .detail-box a:hover {
+  color: #00bbf0;
+}
+
+.seminar_section .btn-box {
+>>>>>>> a5f5df4 (Feat: Add seminar)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1407,17 +1449,55 @@ a:focus {
   margin-top: 45px;
 }
 
+<<<<<<< HEAD
 .community_section .btn-box a {
+=======
+.seminar_section .btn-box a {
+>>>>>>> a5f5df4 (Feat: Add seminar)
   display: inline-block;
   padding: 10px 45px;
   background-color: #00bbf0;
   color: #ffffff;
+<<<<<<< HEAD
   border-radius: 5px;
+=======
+  border-radius: 0;
+>>>>>>> a5f5df4 (Feat: Add seminar)
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: none;
 }
 
+<<<<<<< HEAD
 .community_section .btn-box a:hover {
   background-color: #007fa4;
+=======
+.seminar_section .btn-box a:hover {
+  background-color: #007fa4;
+}
+
+.seminar_section * {
+  box-sizing: border-box;
+}
+
+.seminar_section .body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.seminar_section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.seminar_section .text-container {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+>>>>>>> a5f5df4 (Feat: Add seminar)
 }
