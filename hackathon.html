@@ -46,6 +46,7 @@
             /* 내부 여백 추가 */
             border-radius: 5px;
             /* 모서리를 둥글게 */
+
             margin-bottom: 20px; /* 간격을 20px로 수정 */
         }
 
@@ -56,6 +57,7 @@
         /* 제목과 내용 사이의 간격 늘리기 */
         .hackathon_info h2 {
             margin-bottom: 30px; /* 예시로 30px 간격 추가 */
+
         }
     </style>
 
@@ -111,6 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+
                     <h2 class="section_heading">SOGRA 해커톤</h2>
                     <div style="padding:15px;"></div>  
                     <p class="hackathon_intro">
@@ -127,13 +130,16 @@
                     </div>
 
 
+
                     <label for="year_select">연도 선택:</label>
                     <select id="year_select" onchange="showHackathonInfo()">
                         <option value="all">전체</option>
                         <option value="2024">2024년</option>
                         <option value="2023">2023년</option>
                     </select>
+
                     <div style="padding:10px;"></div>
+
 
 
 
@@ -195,7 +201,9 @@
                             </a>
                             <a class="" href="https://open.kakao.com/o/sIllhT5f">
                                 가입 문의
+
                             </a>[]
+
                         </div>
                     </div>
                 </div>
@@ -207,6 +215,7 @@
         function showHackathonInfo() {
             var year = document.getElementById("year_select").value;
             var hackathonInfoDiv = document.getElementById("hackathon_info");
+
 
             // Clear previous content
             hackathonInfoDiv.innerHTML = "";
@@ -284,10 +293,12 @@
                         </div>
                     </div>
                     <div style="clear: both;"></div>
+
                 `;
             }
             if (year === "all" || year === "2024") {
                 hackathonInfoDiv.innerHTML += `
+
                 <div style="padding:30px;"></div>
                     <div class="col-md-4 hackathon_item" data-year="2023">
                         <div class="hackathon_info">
@@ -307,14 +318,17 @@
                         </div>
                     </div>
                     <div style="clear: both;"></div>
+
                 `;
             }
             // Add information for other years if needed
         }
 
+
         // Call the function initially to display hackathon info for the default year (2023)
         showHackathonInfo();
     </script>
+
 
 
 
