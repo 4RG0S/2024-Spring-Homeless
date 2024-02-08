@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/logo_circle.png" type="">
+
+    <title>ARGOS</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+        .hackathon_name {
+            font-size: 30px;
+        }
+
+        .hackathon_intro {
+            background-color: #231a6f;
+            /* 남색 배경 */
+            color: white;
+            /* 흰색 텍스트 */
+            padding: 15px;
+            /* 내부 여백 추가 */
+            border-radius: 5px;
+            /* 모서리를 둥글게 */
+            margin-bottom: 10px;
+            /* 하단 마진 추가 */
+        }
+    </style>
+
+</head>
+
+<body class="sub_page">
+
+    <div class="hero_area">
+
+        <div class="hero_bg_box">
+            <div class="bg_img_box">
+                <img src="images/hero-bg.png" alt="">
+            </div>
+        </div>
+
+        <!-- header section starts -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            ARGOS
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="education.html">교육 활동</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="history.html">활동 기록</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://open.kakao.com/o/sIllhT5f">가입 문의</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <section class="hackathon_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section_heading">해커톤</h2>
+                    <p class="hackathon_intro">
+                        <span class="C9DxTc" style="font-family: Lato, Arial; font-weight: 700;">소개</span>
+                        <span class="C9DxTc"> : 목적 없이 과제가 나오는 대로 하던 코딩이 아닌 팀원과 만들고 싶은 것을 하루 동안 만들어 봄으로써 코딩에 대한 새로운 재미를 찾기 위한 해커톤 대회<br>
+                            발표 및 영상 제작을 통해 개발 능력 못지않게 중요한 의사소통 능력을 향상 시키고 발표 경험을 쌓을 수 있음<br>
+                            타 해커톤과는 다르게 보안의 우수성 혹은 보안의 경각심을 일깨워 주는 우수 작품에 대하여 보안상을 수여하여 보안의 중요성을 강조<br><br>
+                            대상: 컴퓨터공학과 학생 및 사업 참여 학과 학생<br><br>
+                            일정: 매년 5~6월 중 개최 예정
+                    </p>
+
+                    <label for="year_select">연도 선택:</label>
+                    <select id="year_select" onchange="showHackathonInfo()">
+                        <option value="all">전체</option>
+                        <option value="2024">2024년</option>
+                        <option value="2023">2023년</option>
+                    </select>
+
+                    <hr style="border-top: 2px solid black;">
+
+                    <div id="hackathon_info" class="jXK9ad-SmKAyb">
+                        <!-- Hackathon info will be displayed here based on the selected year -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info_section layout_padding2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 info_col">
+                    <div class="info_contact">
+                        <h4>
+                            Address
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="https://map.naver.com/p/entry/place/21033930?c=15.00,0,0,0,dh" target="_blank">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    대전광역시 유성구 대학로 99 (충남대학교) 공과대학 5호관
+                                </span>
+                            </a>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    we.represent.argos@gmail.com
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info_social">
+                        <a href="">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cnu_argos/" target="_blank">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 mx-auto info_col">
+                    <div class="info_link_box">
+                        <h4>
+                            Links
+                        </h4>
+                        <div class="info_links">
+                            <a class="active" href="index.html">
+                                Home
+                            </a>
+                            <a class="" href="education.html">
+                                교육 활동
+                            </a>
+                            <a class="" href="history.html">
+                                활동 기록
+                            </a>
+                            <a class="" href="https://open.kakao.com/o/sIllhT5f">
+                                가입 문의
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showHackathonInfo() {
+            var year = document.getElementById("year_select").value;
+            var hackathonInfoDiv = document.getElementById("hackathon_info");
+    
+            // Clear previous content
+            hackathonInfoDiv.innerHTML = "";
+    
+            // Add new content based on the selected year
+            if (year === "all" || year === "2023") {
+                // Fix the width to accommodate the images
+                hackathonInfoDiv.innerHTML += `
+                <div class="col-md-4 hackathon_item" data-year="2023">
+                    <span class="hackathon_date">2023년 5월</span>
+                    <div class="hackathon_info">
+                        <h3 class="hackathon_name">SOGRA 해커톤 </h3>
+                        <h5 class="hackathon_award">수상 내역</h5>
+                        <div style="width: 500px; margin: 0 auto; margin-bottom: 20px;">
+                            <div style="text-align: center;">
+                                <table border="1" style="width: 100%; display: inline-table;">
+                                    <tr>
+                                        <th>수상</th>
+                                        <th>팀명</th>
+                                    </tr>
+                                    <tr>
+                                        <td>대상</td>
+                                        <td>팀명1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>최우수상</td>
+                                        <td>팀명2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>우수상</td>
+                                        <td>팀명3</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Add the activity photo text above the images -->
+                        <div style="display: flex; justify-content: space-between;">
+                            <img src="images/hackathon.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                            <img src="images/hackathon1.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                            <img src="images/hackathon2.png" alt="웹 개발 해커톤 수상작" height="227" style="margin-right: 15px; object-fit: cover;" />
+                            <img src="images/hackathon3.png" alt="웹 개발 해커톤 수상작" height="227" style="object-fit: cover;" />
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div style="height: 1px; background-color: black; width: 1000px; margin: 20px auto;"></div>
+                `;
+            }
+            if (year === "all" || year === "2024") {
+                hackathonInfoDiv.innerHTML += `
+                    <div class="tyJCtd mGzaTb Depvyb baZpAe">
+                        <span class="hackathon_date">2024년 5월</span>
+                    <div class="hackathon_info">
+                        <h3 class="hackathon_name">SOGRA 해커톤 </h3>
+                    </div>
+                    <div style="height: 1px; background-color: black; width: 1000px; margin: 20px auto;"></div>
+                `;
+            }
+            // Add information for other years if needed
+        }
+    
+        // Call the function initially to display hackathon info for the default year (2023)
+        showHackathonInfo();
+    </script>
+    
+    
+    
+    
+    
+    
+
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+
+</body>
+
+</html>
