@@ -8,4 +8,4 @@ body { padding: 0px;}
 .history div:before { content: ""; position: absolute; left:8px; top:0; width: 2px; height: 100%; background: black;}
 .history div:first-child:before { top:10px; height:calc(100% - 10px);}
 .history ol { padding: 20px 0 74px; }
-.history li { font-size: 17px; color:black; line-height: 29px;}
+.history li { font-size: 17px; color:black; line-height: 29px; margin-top: 10px;}
