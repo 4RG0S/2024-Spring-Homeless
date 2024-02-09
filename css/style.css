@@ -50,7 +50,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .heading_container p {
@@ -168,7 +168,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -184,7 +184,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -306,7 +306,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -395,7 +395,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
 }
 
 .conferences_section {
@@ -455,7 +455,7 @@ a:focus {
 }
 
 .conferences_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .conferences_section .btn-box {
@@ -471,7 +471,7 @@ a:focus {
 .conferences_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -513,7 +513,7 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
@@ -591,7 +591,7 @@ a:focus {
 .activity_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -638,7 +638,7 @@ a:focus {
 }
 
 .info_section .info_contact .contact_link_box a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .info_section .info_social {
@@ -666,7 +666,7 @@ a:focus {
 }
 
 .info_section .info_social a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .info_section .info_links {
@@ -693,7 +693,7 @@ a:focus {
 }
 
 .info_section .info_links a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .info_section form input {
@@ -727,7 +727,7 @@ a:focus {
   text-align: center;
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -737,7 +737,7 @@ a:focus {
 }
 
 .info_section form button:hover {
-  background-color: #007fa4;
+  background-color: #3866d1;
 }
 
 /* footer section*/
@@ -817,7 +817,7 @@ a:focus {
 }
 
 .education_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .education_section .btn-box {
@@ -833,7 +833,7 @@ a:focus {
 .education_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -911,7 +911,7 @@ a:focus {
   width: auto;
   padding: 10px;
   text-align: center;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: white;
   border: none;
   text-decoration: none;
@@ -1003,7 +1003,7 @@ a:focus {
 }
 
 .seminar_section .box .detail-box a:hover {
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .seminar_section .btn-box {
@@ -1019,7 +1019,7 @@ a:focus {
 .seminar_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
@@ -1028,7 +1028,7 @@ a:focus {
 }
 
 .seminar_section .btn-box a:hover {
-  background-color: #007fa4;
+  background-color: #3866d1;
 }
 
 .seminar_section * {
@@ -1425,7 +1425,7 @@ a:focus {
 .community_board {
   display: inline-block;
   width: 48%;
-  border: 2px solid #00bbf0;
+  border: 2px solid #3866d1;
   border-radius: 20px;
 }
 
@@ -1450,7 +1450,7 @@ a:focus {
 .community_board .title a {
   display: inline-block;
   vertical-align: middle;
-  color: #00bbf0;
+  color: #3866d1;
 }
 
 .community_board .title a:hover {
@@ -1521,7 +1521,7 @@ a:focus {
 .community_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #00bbf0;
+  background-color: #3866d1;
   color: #ffffff;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
