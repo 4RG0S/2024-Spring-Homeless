@@ -848,22 +848,32 @@ a:focus {
 .education_section * {
   box-sizing: border-box;
 }
+
 .education_section .body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .education_section .container {
   display: flex;
   align-items: center;
-  justify-content: last baseline;
-  flex-wrap: nowrap;
+  justify-content: space-between;
   gap: 50px;
 }
+
+@media (max-width: 768px) {
+  .education_section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .education_section .slideshow-container {
   width: 50%;
   position: relative;
   overflow: hidden;
 }
+
 .education_section .mySlides-education,
 .education_section .mySlides-study,
 .education_section .mySlides-seminar,
@@ -878,17 +888,27 @@ a:focus {
   text-align: center;
   overflow: hidden;
 }
+
 .education_section .text-container {
   width: 50%;
   padding: 20px;
+  align-items: center;
 }
+
 .education_section .text-container h3 {
   font-size: 15px; 
   color: #888; 
 }
+
+.education_section .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .education_section .button {
-  display: block;
-  width: 30%;
+  display: inline-block;
+  width: auto;
   padding: 10px;
   text-align: center;
   background-color: #00bbf0;
@@ -896,9 +916,8 @@ a:focus {
   border: none;
   text-decoration: none;
   margin-top: 50px;
-  margin-left: auto; 
-  margin-right: auto;
 }
+
 .education_section .thumbnail-education, 
 .education_section .thumbnail-study, 
 .education_section .thumbnail-seminar, 
@@ -909,6 +928,7 @@ a:focus {
   width: 40px;
   height: 40px;
 }
+
 .education_section .thumbnails-education, 
 .education_section .thumbnails-study, 
 .education_section .thumbnails-seminar, 
@@ -924,6 +944,7 @@ a:focus {
   top: 20px;
   margin-top: 20px;;                
 }
+
 .education_section .prev,
 .education_section .next {
     position: absolute;
@@ -933,12 +954,15 @@ a:focus {
     cursor: pointer;
     color: white;
 }
+
 .education_section .prev {
     left: 10px;
 }
+
 .education_section .next {
     right: 10px;
 }
+
 .education_section img {
   max-width: 100%;
   height: auto;
