@@ -245,6 +245,56 @@ a:focus {
   top: 0;
 }
 
+/* 하위 메뉴 css */
+
+.navbar-nav .nav-item ul,
+.navbar-nav .nav-item.active ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(23, 14, 90);
+  list-style-type: none;
+  padding: 0;
+  padding-top: 25px; /* 위 padding 값 */
+  padding-bottom: 10px; /* 아래 padding 값 */
+  margin: 0;
+  width: auto;
+  text-align: center;
+  /* TODO: 이후에 게시판과 로그인 추가하면 right: 400px로 설정하면 됨 */
+  right: 173px; /* 고정 위치 설정 */ 
+  top: 70%; /* top: 70% 설정 안 하면 하위 메뉴 고를 때 하위 메뉴가 사라져버림 */
+}
+
+.navbar-nav .nav-item ul li a,
+.navbar-nav .nav-item.active ul li a {
+  color: rgb(23, 14, 90)
+}
+
+.navbar-nav .nav-item ul li a:hover,
+.navbar-nav .nav-item.active ul li a:hover {
+  color: rgb(23, 14, 90);
+}
+
+.navbar-nav .nav-item ul li a.nav-link,
+.navbar-nav .nav-item.active ul li a.nav-link {
+  color: #fff !important;
+  padding: 5px 20px !important;
+  text-transform: uppercase !important;
+  border-radius: 5px !important;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+
+.navbar-nav .nav-item:hover ul,
+.navbar-nav .nav-item.active:hover ul,
+.navbar-nav .nav-item.active ul {
+  display: block;
+}
+
+.navbar-nav .nav-item ul li a.nav-link:hover,
+.navbar-nav .nav-item.active ul li a.nav-link:hover {
+  color: #3866d1 !important;
+}
+
 /*end header section*/
 /* slider section */
 .slider_section {
