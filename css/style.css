@@ -912,17 +912,31 @@ a:focus {
   gap: 50px;
 }
 
-@media (max-width: 768px) {
-  .education_section .container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .education_section .slideshow-container {
   width: 50%;
   position: relative;
   overflow: hidden;
+}
+
+.education_section .text-container {
+  width: 50%;
+  padding: 20px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .education_section .slideshow-container {
+    width: auto;
+  }
+
+  .education_section .text-container {
+    width: auto;
+  }
+
+  .education_section .container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .education_section .mySlides-education,
@@ -938,12 +952,6 @@ a:focus {
   padding: 40px;
   text-align: center;
   overflow: hidden;
-}
-
-.education_section .text-container {
-  width: 50%;
-  padding: 20px;
-  align-items: center;
 }
 
 .education_section .text-container h3 {
